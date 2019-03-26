@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="lib/jquery-3.3.1.min.js" ></script>
+    <script src="lib/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="lib/sammy.js" type="text/javascript" ></script>
+    <script src="controller.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+
+<!-- miejsce na navabara --> 
+<div class="navbar-fixed-top sidenav " >
+
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#/">START</a></li>
+                <li class="dropdown-submenu">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Ruiny</a>
+                    <ul class="dropdown-menu ">
+                        <li> Długość misji:</li>
+                        <li class="divider"></li>
+
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Krótka</a>
+                            <ul class="dropdown-menu">
+                                <li class="opis_w_menu"> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Ruiny_Krotka_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Ruiny_Krotka_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Średnia</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Ruiny_Srednia_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Ruiny_Srednia_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Długa</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Ruiny_Dluga_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Ruiny_Dluga_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                    <a  class="dropdown-toggle" data-toggle="dropdown">Norowisko</a>
+                    <ul class="dropdown-menu ">
+                        <li> Długość misji:</li>
+                        <li class="divider"></li>
+
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Krótka</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Norowisko_Krotka_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Norowisko_Krotka_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Średnia</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Norowisko_Srednia_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Norowisko_Srednia_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Długa</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Norowisko_Dluga_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Norowisko_Dluga_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown-submenu">
+                    <a  class="dropdown-toggle" data-toggle="dropdown">Knieja</a>
+                    <ul class="dropdown-menu ">
+                        <li> Długość misji:</li>
+                        <li class="divider"></li>
+
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Krótka</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Knieja_Krotka_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Knieja_Krotka_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Średnia</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Knieja_Srednia_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Knieja_Srednia_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Długa</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Knieja_Dluga_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Knieja_Dluga_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown-submenu">
+                    <a  class="dropdown-toggle" data-toggle="dropdown">Zatoka</a>
+                    <ul class="dropdown-menu ">
+                        <li> Długość misji:</li>
+                        <li class="divider"></li>
+
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Krótka</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Zatoka_Krotka_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Zatoka_Krotka_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Średnia</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Zatoka_Srednia_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Zatoka_Srednia_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Długa</a>
+                            <ul class="dropdown-menu">
+                                <li> Wybór ekwipunku:</li>
+                                <li class="divider"></li>
+                                <li><a href="#/Zatoka_Dluga_Standardowy">Standardowy</a></li>
+                                <li><a href="#/Zatoka_Dluga_Niebezpieczny">Niebezpieczny</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+</div>
+
+
+<!--tu ma być wyświetlane główne okno -->
+
+<div id="main"></div>
+
+<div class="footer">
+  <p>Zdjęcia i zawartość gry: Darkest Dungeon należą do <a href="http://www.darkestdungeon.com/contact/" class="redhook">Red Hook Studios</a> i są objęte prawami autorskimi.</p>
+</div>
+
+</body>
+</html>

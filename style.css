@@ -1,0 +1,91 @@
+body{
+	font-size: 12px;
+	color:#fff;
+	background-color: #000;
+}
+
+.mid {
+   position: fixed;
+   left: 165px;
+   top: 0px;
+   text-align: center;
+   font-size: large;
+
+}
+.mid_start {
+   position: absolute;
+   left: 165px;
+   top: 0px;
+   text-align: center;
+   font-size: large;
+}
+
+
+.right {
+	position: relative;
+    left: 610px;
+	top:50px;
+	background: black;
+}
+
+img.legenda {
+	max-height: 70px;
+	width: auto;
+	padding: 10px;
+}
+table,th,td{
+	text-align: center;
+}
+
+table{
+	margin-right: 10px;
+}
+th {
+	font-size: large;
+	padding-right: 10px;
+	position: sticky;
+	top:0px;
+	background-color: black;
+}
+td{
+	padding-bottom: 10px !important;
+}
+
+.ekwipunek td{
+   	padding-right:5px;
+   	padding-bottom: 0px !important;
+
+}
+h1{
+	margin-top: 0px;
+}
+
+span.darkest{
+	color:red;
+}
+
+
+p.opis_gry{
+	padding-left: 200px;
+	text-align: left !important;
+}
+ul.start li{
+	text-align: left !important;
+	margin-left: 200px;
+}
+
+h2.cel {
+	color: lightblue;
+}
+
+h3.Standardowy {
+	color: lightgreen;
+}
+
+h3.Niebezpieczny {
+	color: darkred;
+}
+
+.mapa, .dlugosc_m, .poradnik {
+	color: #337ab7;
+}

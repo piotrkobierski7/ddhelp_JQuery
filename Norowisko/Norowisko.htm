@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="mid">
+	<div>
+		<h1>Nieoficjalna pomoc do gry<br><span class="darkest">Darkest Dungeon</span></h1>
+	</div>
+	<table class="ekwipunek">
+		<tr>
+			<td><img src="img/Pochodnia.png"></td>
+			
+			<td>x<span id="ekw_pochodnia"></span></td>
+
+			<td><img src="img/jedzenie.png"></td>
+			
+			<td>x<span id="ekw_jedzenie"></span></td>
+
+			<td><img src="img/łopata.png"></td>
+			
+			<td>x<span id="ekw_lopata"></span></td>
+
+			<td><img src="img/woda_święcona.png"></td>
+			
+			<td>x<span id="ekw_woda_swiecona"></span></td>
+		</tr>
+		<tr>
+			<td><span id="cena_pochodnia"></span><img src="img/moneta.png"></td>
+			<td></td>
+			<td ><span id="cena_jedzenie"></span><img src="img/moneta.png"></td>
+			<td></td>
+			<td ><span id="cena_lopata"></span><img src="img/moneta.png"></td>
+			<td></td>
+			<td><span id="cena_woda_swiecona"></span><img src="img/moneta.png"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><img src="img/wytrych.png"></td>
+			
+			<td>x<span id="ekw_wytrych"></span></td>
+
+			<td><img src="img/zioła_medyczne.png"></td>
+			
+			<td>x<span id="ekw_ziola_medyczne"></span></td>
+
+			<td><img src="img/Odrutka.png"></td>
+			
+			<td>x<span id="ekw_odrutka"></span></td>
+
+			<td><img src="img/bandaż.png"></td>
+			
+			<td>x<span id="ekw_bandaz"></span></td>
+		</tr>
+		<tr>
+			<td ><span id="cena_wytrych"></span><img src="img/moneta.png"></td>
+			<td></td>
+			<td ><span id="cena_ziola_medyczne"></span><img src="img/moneta.png"></td>
+			<td></td>
+			<td ><span id="cena_odrutka"></span><img src="img/moneta.png"></td>
+			<td></td>
+			<td ><span id="cena_bandaz"></span><img src="img/moneta.png"></td>
+			<td></td>
+		</tr>
+
+	</table>
+	<br>
+	<div>Cena całości ekwipunku: <span id="ck"></span><img src="img/moneta.png"></div>
+
+	<div>
+		<h2>
+			<br>
+			Mapa: <span class="mapa" id="typ_mapy"></span><br>
+			Długość misji: <span class="dlugosc_m" id="how_long"></span><br>
+			Poradnik: <span class="poradnik" id="typ_porad"></span>
+		</h2>
+	</div>
+		
+
+</div>
+
+
+<div class="right">
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Nazwa i Piktogram Ciekawostki</th>
+				<th>Opcja 1</th>
+				<th>Efekty</th>
+				<th>Opcja 2</th>
+				<th>Efekty</th>
+				<th>Opcja 3</th>
+				<th>Efekty</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Kamień ofiarny</td>
+				<td><img src="img/kamień_ofiarny.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>50% stres +50<br>25% usuwa negatywną cechę<br>12,5% pozytywne cecha odkrywca norowisk<br>12,5% pozytywne cecha taktyk norowisk</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Lichtarz</td>
+				<td><img src="img/lichtarz.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>Pochodnia</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Okultystyczne rysunki</td>
+				<td><img src="img/okultystyczne_rysunki.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>33,3% losowa pozytywna cecha<br>25% stres +25<br>17,6% losowa negatywna cecha<br>25% Nic</td>
+				<td><img src="img/woda_święcona.png" class="legenda"></td>
+				<td>Debuff 20 unik</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Ołtarz z kości</td>
+				<td><img src="img/ołtarz_z_kości.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>Buff + 15% OBR, +10 CEL, + 5% KRYT, leczy efecty stanu</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Ołtarz Shamblera</td>
+				<td><img src="img/ołtarz_shamblerów.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>Nic</td>
+				<td><img src="img/Pochodnia.png" class="legenda"></td>
+				<td>Przywołuje Shamblera</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Porzucony plecak</td>
+				<td><img src="img/porzucony_plecak.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>60% Złoto, klejnoty lub zapasy x1,5<br>20% zwiad<br>20% Nic</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Prowizoryczny stół obiadowy</td>
+				<td><img src="img/prowizoryczny_stół_obiadowy.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>25% złoto, żywność lub artefakty<br>25% zaraza<br>25% losowa choroba<br>25% Nic</td>
+				<td><img src="img/zioła_medyczne.png" class="legenda"></td>
+				<td>Złoto, jedzenie lub artefakty x2</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Przerażający ołtarz</td>
+				<td><img src="img/przerażający_ołtarz.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>50% stres +50<br>33% dostajesz pozytywną cechę<br>16% dostajesz negatywną cechę<br>16% Nic</td>
+				<td><img src="img/woda_święcona.png" class="legenda"></td>
+				<td>Usuwa negatywną cechę</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Starożytny Artefakt</td>
+				<td><img src="img/starożytny_artefact.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>Złoto lub klejnoty x2,5</td>
+				<td><img src="img/wytrych.png" class="legenda"></td>
+				<td>Artefakt albo Zadziwiający Trapezohedron x3</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Skrzynia</td>
+				<td><img src="img/skrzynia.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>75% pamiątki<br>25% nic</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Skrzynia dziedzictwa</td>
+				<td><img src="img/skrzynia_dziedzictwa.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>75% Złoto lub klejnoty x2<br>12,5% krwawienie<br>12,5% zaraza</td>
+				<td><img src="img/wytrych.png" class="legenda"></td>
+				<td>pamiątki x3</td>
+				<td><img src="img/Odrutka.png" class="legenda"></td>
+				<td>pamiątki x3</td>
+			</tr>
+			<tr>
+				<td>Skrzynia z otwartym zamkiem</td>
+				<td><img src="img/skrzynia_z_otwartym_zamkiem.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>75% Różnorodne łupy x2<br>25% zaraza</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Stos kości</td>
+				<td><img src="img/stos_kości.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>25% różnorodne łupy x2<br>25% losowa choroba<br>25% negatywna cecha krwiożerczy<br>25% Nic</td>
+				<td><img src="img/woda_święcona.png" class="legenda"></td>
+				<td>różnorodne łupy x2</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Stos książek</td>
+				<td><img src="img/stos_książek.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>26% stres +25 x 2<br>26% losowa pozytywna cecha<br>13% losowa negatywne cecha<br>13% Zmniejsz poziom światła o 25<br>20% Nic</td>
+				<td><img src="img/Pochodnia.png" class="legenda"></td>
+				<td>Stres +100</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Stos zwojów</td>
+				<td><img src="img/stos_zwojów.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>33,3% zwiad<br>16,7% Stres +15<br>11,1% losowa pozytywna cecha<br>5,6% Uzyskaj losowe negatywne dziwactwo<br>33,3% Nic</td>
+				<td><img src="img/Pochodnia.png" class="legenda"></td>
+				<td>Usuwa negatywną cechę</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Stojak z ostrzami</td>
+				<td><img src="img/stojak_z_ostrzami.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>40% złoto, klejnoty lub żywnoścć<br>40% krwawienie<br>20% Nic</td>
+				<td><img src="img/bandaż.png" class="legenda"></td>
+				<td>złoto, klejnoty lub żywnoścć x1,5</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Worek</td>
+				<td><img src="img/worek.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>75% Złoto lub klejnoty<br>25% Nic</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Wóz obiadowy</td>
+				<td><img src="img/wóz_obiadowy.png" class="legenda"></td>
+				<td><img src="img/domyślna_opcja.png" class="legenda"></td>
+				<td>25% złoto, żywność lub artefakty x1<br>25% zaraza<br>25% losowa choroba<br>25% Nic</td>
+				<td><img src="img/zioła_medyczne.png" class="legenda"></td>
+				<td>Złoto, jedzenie lub artefakty x2</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+</body>
+</html>
